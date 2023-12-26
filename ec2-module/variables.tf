@@ -20,3 +20,8 @@ variable "key_name" {
     type    = string
     default = "tf-key-pair"
 }
+
+variable "vpc" {
+    type = string
+    default = "development"
+}
