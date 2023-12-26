@@ -15,3 +15,8 @@ variable "resource_tags" {
     Name = "AppServer"
   }
 }
+
+variable "key_name" {
+    type    = string
+    default = "tf-key-pair"
+}
