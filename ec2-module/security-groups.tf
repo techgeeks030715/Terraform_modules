@@ -1,7 +1,7 @@
-resource "aws_security_group" "Ec2_security_group" {
+resource "aws_security_group" "ec2_security_group" {
   name        = var.security_group
   description = "Allow TLS inbound traffic"
-  vpc_id      = aws_default_vpc.main.id
+  vpc_id      = "${data.aws_vpc.selected.id}"
   ingress {
     from_port = 80
     to_port = 80
